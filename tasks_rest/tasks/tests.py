@@ -310,7 +310,7 @@ class TaskApiViewTestCase(APITestCase):
         response = self.client.get(url)
         self.assertEqual(401, response.status_code)
 
-    def test_listar_task_search(self):
+    def test_list_task_search(self):
         self.api_authentication()
 
         title = 'Tarea para la busqueda'
